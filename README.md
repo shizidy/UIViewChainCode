@@ -1,2 +1,2 @@
 # UIViewChainCode
-常用控件的链式编程
+常用UIView, UILabel, UIButton, UITextField控件的链式编程
