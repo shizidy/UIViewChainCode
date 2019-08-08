@@ -51,7 +51,7 @@
         button.viewLayerRadius(5, YES);
         button.viewLayerBorder(2, [UIColor orangeColor]);
         button.viewBackgroundColor([UIColor brownColor]);
-        button.text_font_textColor(@"我是button", [UIFont systemFontOfSize:16], [UIColor whiteColor]);
+        button.text_font_textColor_controlState(@"我是button", [UIFont systemFontOfSize:16], [UIColor whiteColor], UIControlStateNormal);
     }];
     [self.view addSubview:button];
     //添加textField

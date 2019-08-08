@@ -16,10 +16,10 @@
     return button;
 }
 
-- (Text_font_textColor)text_font_textColor {
-    return ^UIButton *(NSString *text, UIFont *font, UIColor *color) {
-        [self setTitle:text forState:UIControlStateNormal];
-        [self setTitleColor:color forState:UIControlStateNormal];
+- (Text_font_textColor_controlState)text_font_textColor_controlState {
+    return ^UIButton *(NSString *text, UIFont *font, UIColor *color, UIControlState controlState) {
+        [self setTitle:text forState:controlState];
+        [self setTitleColor:color forState:controlState];
         self.titleLabel.font = font;
         return self;
     };

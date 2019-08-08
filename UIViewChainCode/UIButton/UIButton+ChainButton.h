@@ -23,7 +23,7 @@ typedef void(^ButtonReturn)(UIButton *button);
  @param color textColor
  @return UIButton对象
  */
-typedef UIButton *_Nonnull(^Text_font_textColor)(NSString *text, UIFont *font, UIColor *color);
+typedef UIButton *_Nonnull(^Text_font_textColor_controlState)(NSString *text, UIFont *font, UIColor *color, UIControlState controlState);
 
 
 
@@ -41,7 +41,7 @@ typedef UIButton *_Nonnull(^Text_font_textColor)(NSString *text, UIFont *font, U
 
  @return Text_font_textColor
  */
-- (Text_font_textColor)text_font_textColor;
+- (Text_font_textColor_controlState)text_font_textColor_controlState;
 @end
 
 NS_ASSUME_NONNULL_END
