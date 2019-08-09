@@ -40,6 +40,14 @@ typedef UIButton *_Nonnull(^Image_controlState)(NSString *imageName, UIControlSt
  @return UIButton对象
  */
 typedef UIButton *_Nonnull(^BackgroundImage_controlState)(NSString *imageName, UIControlState controlState);
+/**
+ 设置button点击事件
+
+ @param target target
+ @param selector selector选择器
+ @param events 事件类型
+ @return UIButton对象
+ */
 typedef UIButton *_Nonnull(^Target_selector_events)(id target, SEL selector, UIControlEvents events);
 
 
@@ -69,6 +77,11 @@ typedef UIButton *_Nonnull(^Target_selector_events)(id target, SEL selector, UIC
  @return BackgroundImage_controlState
  */
 - (BackgroundImage_controlState)backgroundImage_controlState;
+/**
+ 设置button点击事件
+
+ @return Target_selector_events
+ */
 - (Target_selector_events)target_selector_events;
 @end
 

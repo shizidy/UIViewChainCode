@@ -59,11 +59,11 @@
 		9A0C358922FAC40B00FA228A /* UIView+ChainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ChainView.h"; sourceTree = "<group>"; };
 		9A0C358B22FAC40B00FA228A /* UIButton+ChainButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ChainButton.m"; sourceTree = "<group>"; };
 		9A0C358C22FAC40B00FA228A /* UIButton+ChainButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ChainButton.h"; sourceTree = "<group>"; };
-		9A0C358D22FAC40B00FA228A /* UIViewChainHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewChainHeader.h; sourceTree = "<group>"; };
 		9A0C358F22FAC40B00FA228A /* UILabel+ChainLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ChainLabel.h"; sourceTree = "<group>"; };
 		9A0C359022FAC40B00FA228A /* UILabel+ChainLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ChainLabel.m"; sourceTree = "<group>"; };
 		9A0C359222FAC40B00FA228A /* UITextField+ChainTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ChainTextField.h"; sourceTree = "<group>"; };
 		9A0C359322FAC40B00FA228A /* UITextField+ChainTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ChainTextField.m"; sourceTree = "<group>"; };
+		9AE399BA22FD0F0D0018DC43 /* ChainHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 				9A0C358E22FAC40B00FA228A /* UILabel */,
 				9A0C359122FAC40B00FA228A /* UITextField */,
 				9A0C358722FAC40B00FA228A /* UIView */,
-				9A0C358D22FAC40B00FA228A /* UIViewChainHeader.h */,
+				9AE399BA22FD0F0D0018DC43 /* ChainHeader.h */,
 				9A0C354F22FA9C0300FA228A /* AppDelegate.h */,
 				9A0C355022FA9C0300FA228A /* AppDelegate.m */,
 				9A0C355222FA9C0300FA228A /* ViewController.h */,
