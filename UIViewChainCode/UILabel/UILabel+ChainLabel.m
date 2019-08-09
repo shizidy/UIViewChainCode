@@ -33,6 +33,13 @@
     };
 }
 
+- (LabelTextAlignment)labelTextAlignment {
+    return ^UILabel *(NSTextAlignment textAlignment) {
+        self.textAlignment = textAlignment;
+        return self;
+    };
+}
+
 
 
 //- (LabelFrame)labelFrame {

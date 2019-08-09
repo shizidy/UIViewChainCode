@@ -25,5 +25,25 @@
     };
 }
 
+- (Image_controlState)image_controlState {
+    return ^UIButton *(NSString *imageName, UIControlState controlState) {
+        [self setImage:[UIImage imageNamed:imageName] forState:controlState];
+        return self;
+    };
+}
+
+- (BackgroundImage_controlState)backgroundImage_controlState {
+    return ^UIButton *(NSString *imageName, UIControlState controlState) {
+        [self setBackgroundImage:[UIImage imageNamed:imageName] forState:controlState];
+        return self;
+    };
+}
+
+- (Target_selector_events)target_selector_events {
+    return ^UIButton *(id target, SEL selector, UIControlEvents events) {
+        [self addTarget:target action:selector forControlEvents:events];
+        return self;
+    };
+}
 
 @end

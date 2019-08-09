@@ -57,7 +57,7 @@ typedef UILabel *_Nonnull(^LabelNumberOfLines)(NSInteger lines);
  @param color color
  @return UILabel对象
  */
-typedef UILabel * _Nonnull(^LabelBackgroundColor)(UIColor *color);
+typedef UILabel *_Nonnull(^LabelBackgroundColor)(UIColor *color);
 /**
  设置layerRadius
  
@@ -65,7 +65,7 @@ typedef UILabel * _Nonnull(^LabelBackgroundColor)(UIColor *color);
  @param maskToBounds maskToBounds
  @return UILabel对象
  */
-typedef UILabel * _Nonnull(^LabellayerRadius)(CGFloat radius, BOOL maskToBounds);
+typedef UILabel *_Nonnull(^LabellayerRadius)(CGFloat radius, BOOL maskToBounds);
 /**
  设置layerBorder
  
@@ -73,7 +73,14 @@ typedef UILabel * _Nonnull(^LabellayerRadius)(CGFloat radius, BOOL maskToBounds)
  @param color borderColor
  @return UILabel对象
  */
-typedef UILabel * _Nonnull(^LabellayerBorder)(CGFloat width, UIColor *color);
+typedef UILabel *_Nonnull(^LabellayerBorder)(CGFloat width, UIColor *color);
+/**
+ 设置textAlignment
+
+ @param textAlignment textAlignment
+ @return UILabel对象
+ */
+typedef UILabel *_Nonnull(^LabelTextAlignment)(NSTextAlignment textAlignment);
 
 @interface UILabel (ChainLabel)
 
@@ -96,6 +103,12 @@ typedef UILabel * _Nonnull(^LabellayerBorder)(CGFloat width, UIColor *color);
  @return labelNumberOfLines
  */
 - (LabelNumberOfLines)labelNumberOfLines;
+/**
+ 设置textAlignment
+
+ @return TextAlignment
+ */
+- (LabelTextAlignment)labelTextAlignment;
 
 
 ///**

@@ -42,4 +42,11 @@
     };
 }
 
+- (TextFieldTextAlignment)textFieldTextAlignment {
+    return ^UITextField *(NSTextAlignment textAlignment) {
+        self.textAlignment = textAlignment;
+        return self;
+    };
+}
+
 @end

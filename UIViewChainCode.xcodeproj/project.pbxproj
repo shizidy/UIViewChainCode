@@ -162,8 +162,8 @@
 		9A0C358A22FAC40B00FA228A /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
-				9A0C358B22FAC40B00FA228A /* UIButton+ChainButton.m */,
 				9A0C358C22FAC40B00FA228A /* UIButton+ChainButton.h */,
+				9A0C358B22FAC40B00FA228A /* UIButton+ChainButton.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";

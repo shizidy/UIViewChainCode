@@ -24,8 +24,23 @@ typedef void(^ButtonReturn)(UIButton *button);
  @return UIButton对象
  */
 typedef UIButton *_Nonnull(^Text_font_textColor_controlState)(NSString *text, UIFont *font, UIColor *color, UIControlState controlState);
+/**
+ 设置image, controlState
 
+ @param imageName imageName
+ @param controlState controlState
+ @return UIButton对象
+ */
+typedef UIButton *_Nonnull(^Image_controlState)(NSString *imageName, UIControlState controlState);
+/**
+ 设置backgroundImage, controlState
 
+ @param imageName imageName
+ @param controlState controlState
+ @return UIButton对象
+ */
+typedef UIButton *_Nonnull(^BackgroundImage_controlState)(NSString *imageName, UIControlState controlState);
+typedef UIButton *_Nonnull(^Target_selector_events)(id target, SEL selector, UIControlEvents events);
 
 
 @interface UIButton (ChainButton)
@@ -42,6 +57,19 @@ typedef UIButton *_Nonnull(^Text_font_textColor_controlState)(NSString *text, UI
  @return Text_font_textColor
  */
 - (Text_font_textColor_controlState)text_font_textColor_controlState;
+/**
+ 设置button image
+
+ @return Image_controlState
+ */
+- (Image_controlState)image_controlState;
+/**
+ 设置button BackgroundImage
+
+ @return BackgroundImage_controlState
+ */
+- (BackgroundImage_controlState)backgroundImage_controlState;
+- (Target_selector_events)target_selector_events;
 @end
 
 NS_ASSUME_NONNULL_END
